@@ -29,9 +29,11 @@ public class Timer : MonoBehaviour
             timerText.text = currentTime.ToString("0.000");
         }
     }
-
-    public void BoogerAids()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        ended = true;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            ended = true;
+        }
     }
 }
