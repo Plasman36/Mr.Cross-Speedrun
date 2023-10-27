@@ -20,6 +20,9 @@ public class Timer : MonoBehaviour
     [Header("Username")]
     string inputValue = User.instance.GetInputValue();
 
+    [Header("Level")]
+    public LoadLevel skip = null;
+
     public class ScoreData
     {
         public string Name;
@@ -90,5 +93,6 @@ public class Timer : MonoBehaviour
                 }
             }
         }
+        skip.LoadNewLevel();
     }
 }

@@ -33,4 +33,17 @@ public class LoadLevel : MonoBehaviour
 
         SceneManager.LoadScene(levelIndex);
     }
+    public void LoadFirstLevel()
+    {
+        StartCoroutine(Loadl(0));
+    }
+
+    IEnumerator Loade(int levelIndex)
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(levelIndex);
+    }
 }

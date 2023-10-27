@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1654589810467218887}
   - component: {fileID: 7536723990993498551}
+  - component: {fileID: 6083151536646032173}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -45,8 +46,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0745f3ef43209404c956b12a031c6fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
+  transition: {fileID: 6572970021603144132}
   transitionTime: 1
+--- !u!114 &6083151536646032173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654589810467218886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440ca03d92ba87b4f99764590a393d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 0}
 --- !u!1 &1654589811665097232
 GameObject:
   m_ObjectHideFlags: 0
